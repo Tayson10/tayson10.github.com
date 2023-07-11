@@ -27,7 +27,7 @@ boton.forEach(function(botones){
 
         //Dar timing  a la animación
         setTimeout(function(){
-           location.href = "/";
+           location.href = "/boletines";
         },500);
 
         return false;
