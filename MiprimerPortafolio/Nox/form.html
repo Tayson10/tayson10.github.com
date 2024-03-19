@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regisrtro de usuario</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html">Ir al Inicio</a>
+      </nav>
+    </header>
+
+    <section>
+      <form action="">
+
+        <section>
+          <h2>Datos Personales</h2>
+          <div>
+            <label for="name">Nombre</label>
+            <input type="text" id="name" placeholder="Nombre" />
+          </div>
+
+          <div>
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" placeholder="Correo" />
+          </div>
+        </section>
+
+        <section>
+          <h2>Preferencias</h2>
+          <fieldset>
+            <legend>Newsletter</legend>
+            <input type="radio" id="html_news" name="news" value="html_news" />
+            <label for="html_news">HTML</label>
+            <input type="radio" id="css_news" name="news" value="css_news" />
+            <label for="css_news">CSS</label>
+            <input type="radio" id="js_news" name="news" value="js_news" />
+            <label for="js_news">JavaScript</label>
+          </fieldset>
+        </section>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </body>
+</html>

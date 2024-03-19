@@ -1,0 +1,152 @@
+html{
+  font-family:'Roboto', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: #d500ab;
+}
+.titulo{
+  text-transform: uppercase;
+  text-align: center;
+}
+.table{
+  width: 100%;
+  border-spacing: 0;
+}
+.table td, .table th{
+  padding: 1em;
+  text-align: left;
+}
+.container {
+  background: #642b73; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #c6426e,
+    #642b73
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #c6426e,
+    #642b73
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content{
+  max-width: 960px;
+  max-height: 500px;
+  width: 100%;
+  height: 80%;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 4px;
+  position: relative;
+  overflow: scroll;
+}
+.content{
+  padding: 1em;
+}
+td{
+  display: block;
+  width: 100%;
+}
+td:nth-of-type(1){
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #642b73;
+}
+th{
+  display: none;
+}
+.actions{
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+.red {
+  height: 200px;
+  width: 100px;
+  background-color: red;
+}
+.close{
+  height: 40px;
+  width: 40px;
+  color: white;
+  border-radius: 50%;
+  background-color: #642b73;
+  display: inline-block;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  font-weight: 300;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#boton-pago {
+  background-color: yellow;
+}
+
+.paragraph{
+  line-height: 1.8em;
+  font-weight: 300;
+}
+
+table  tr:nth-child(even){
+  background-color: #f3e5f5;
+}
+
+.fa-star,.fa-sharp fa-regular fa-star{
+  color: #ffc400;
+}
+.title-item{
+  /* border-bottom-style: solid;
+  border-width: 2px;
+  border-color: #c6426e; */
+  border-bottom: solid 2px #c6426e;
+  padding-bottom: 1em;
+  font-size: 2em;
+}
+.position{
+  background-color: #c6426e;
+  color: white;
+  padding: 0.5em;
+  border-radius: 4px;
+  margin: 0.5em;
+}
+a:hover{
+  opacity: 0.8;
+}
+.address{
+  font-weight: bold;
+  color: #642b73;
+  font-size: 1.2em;
+  display: inline-block;
+  margin-top: 2em;
+}
+.main-images{
+  float: left;
+  margin-right: 1em;
+  height: 350px;
+}
+@media(min-width:900px){
+  td{
+    display: table-cell;
+    width: auto;
+  }
+  td:nth-of-type(1){
+    font-size: 1em;
+  }
+  th{
+    display: table-cell;
+  }
+  .content{
+   padding: 1.8em;
+  }
+}
+@media (min-height:550px){
+  .content{
+    height: 500px;
+  }
+}
